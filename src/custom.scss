@@ -1,0 +1,19 @@
+/* Color Palette */
+$custom-primary: #52D6F4;
+$custom-secondary: #434553;
+$custom-dark: #363538;
+$custom-light: #F6F6F6;
+
+
+$body-bg: $custom-dark;
+
+$theme-colors: (
+  "primary": $custom-primary,
+  "light": $custom-light,
+  "secondary": $custom-secondary,
+  "dark": $custom-dark
+);
+
+
+/* import bootstrap to set changes */
+@import "../node_modules/bootstrap/scss/bootstrap";

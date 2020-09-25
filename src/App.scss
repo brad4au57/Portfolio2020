@@ -1,0 +1,108 @@
+@import "custom";
+
+/*** SiteNav Component ***/
+nav {
+  .active {
+    color: $custom-primary !important;
+  }
+  .navbar-toggler {
+    border: none;
+    svg {
+      color: $custom-light;
+      font-size: 2rem;
+    }
+  }
+}
+/*** Spacer Utility ***/
+.spacer {
+  margin-top: 4rem;
+}
+
+/*** Hero Component ***/ 
+#profile-avatar {
+  height: auto;
+  width: 60%;
+  max-width: 300px;
+  border-radius: 50%;
+  box-shadow: -2px 8px 0 5px $custom-secondary;
+}
+.btn-primary {
+  border-radius: 3px;
+}
+
+/*** Skills Component ***/
+.fluid-secondary-bg{
+  background-color: $custom-secondary;
+  .card {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+/*** Projects Component ***/
+.project-image {
+  border-radius: 6px;
+}
+hr {
+  border-bottom: 1px solid $light;
+}
+
+/*** Contact Component ***/
+.send-icon{
+  font-size: 25vw;
+  margin: auto;
+}
+
+/*** Footer Component ***/
+#footer{
+  background-color: $custom-secondary;
+
+  #footer-nav{
+    font-size: 2.5rem;
+    svg{
+      cursor: pointer;
+    }
+  }  
+}
+
+// Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  #profile-avatar {
+    width: 100%;
+  }
+  .card {
+    width: 50%;
+  }  
+}
+
+// Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .send-icon{
+    font-size: 25vw;
+    width: 50%;
+    margin: auto;
+  }
+}
+
+// Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .spacer {
+    margin-top: 6rem;
+  }
+  #skills-section{
+    .card {
+      width: 100%;
+    }
+  }  
+  .fluid-secondary-bg{
+    .card {
+      width: 100%;
+      margin: auto;
+    }
+  }
+}
+
+// Extra large {xl} devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}
