@@ -10,7 +10,7 @@ import SkillCard from "./SkillCard";
 
 export default function Skills() {
   return (
-    <Row className="fluid-secondary-bg">
+    <Row className="fluid-secondary-bg angled-bg">
       <Container>
         <Row className="my-4">
           <Col className="col-12 text-center text-lg-left text-light my-2">

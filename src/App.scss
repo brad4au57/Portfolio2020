@@ -1,7 +1,18 @@
 @import "custom";
 
+/*** Bootstrap Resets ***/
+.row{
+  overflow-x: hidden;
+}
+
 /*** SiteNav Component ***/
 nav {
+  // width: 100%;
+  // padding-right: 15px;
+  // padding-left: 15px;
+  // margin-right: auto;
+  // margin-left: auto;
+
   .active {
     color: $custom-primary !important;
   }
@@ -38,19 +49,45 @@ nav {
     margin: auto;
   }
 }
+.angled-bg{
+  clip-path: polygon(
+    0 6vw, /* left top */
+    100% 0, /* right top */ 
+    100% calc(100% - 6vw), /* right bottom */
+    0 100% /* left bottom */
+  );
+  .container{
+    padding: 100px 0px;
+  }
+}
 
 /*** Projects Component ***/
 .project-image {
   border-radius: 6px;
 }
+
 hr {
+  width:100%;
   border-bottom: 1px solid $light;
 }
 
 /*** Contact Component ***/
+.angled-top{
+  clip-path: polygon(
+    0 0, /* left top */
+    100% 6vw, /* right top */ 
+    100% 100%, /* right bottom */
+    0 100% /* left bottom */
+  );
+}
 .send-icon{
   font-size: 25vw;
   margin: auto;
+}
+#mail_sent_logo{
+  width: 80%;
+  height: 100%;
+  margin-left: 25%;
 }
 
 /*** Footer Component ***/
@@ -67,6 +104,10 @@ hr {
 
 // Small (sm) devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
+  // nav{
+
+  //   max-width: 540px;
+  // }
   #profile-avatar {
     width: 100%;
   }
@@ -77,6 +118,9 @@ hr {
 
 // Medium (md) devices (tablets, 768px and up)
 @media (min-width: 768px) {
+  // nav{
+  //   max-width: 720px;
+  // }
   .send-icon{
     font-size: 25vw;
     width: 50%;
@@ -86,6 +130,9 @@ hr {
 
 // Large (lg) devices (desktops, 992px and up)
 @media (min-width: 992px) {
+  // nav{
+  //   max-width: 960px;
+  // }
   .spacer {
     margin-top: 6rem;
   }
